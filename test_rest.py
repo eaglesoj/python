@@ -1,7 +1,7 @@
 import json
 import requests
 
-resp = requests.get('https://jsonplaceholder.typicode.com/todos/', stream=True)
+resp = requests.get('https://jsonplaceholder.typicode.com/todos/')
 if resp.status_code != 200:
     # This means something went wrong.
     raise ApiError('GET /todos/ {}'.format(resp.status_code))

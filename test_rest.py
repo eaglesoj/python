@@ -7,6 +7,9 @@ if resp.status_code != 200:
     raise ApiError('GET /todos/1 {}'.format(resp.status_code))
 json_data =  resp.json()
 
+# print status_code
+print('status_code:' + str(status_code))
+
 # print response
 print (json_data)
 print('userId:' + str(json_data['userId']))

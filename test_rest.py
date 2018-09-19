@@ -8,7 +8,7 @@ if resp.status_code != 200:
 json_data =  resp.json()
 
 # print status_code
-print('status_code:' + str(status_code))
+print('status_code:' + str(resp.status_code))
 
 # print response
 print (json_data)
